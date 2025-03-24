@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">David</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Dev <span class="fw-bold">David</span></h1>
+      <p class="lead">Aspiring Developer | Tech Enthusiast | Problem Solver</p>
+      <a href="#projects" class="btn btn-light btn-lg mt-3">개발 경력</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p>
+            안녕하세요 신입 개발자 김수형입니다.<br>
+            개발 외에도 학교, 기업 코딩 교육 및 세미나에 관심이 있습니다.<br>
+            연락처는 하단에 있습니다.<br>
+            감사합니다.<br><br>
+  
+            저는 다음과 같은 프로젝트를 진행했습니다.
+
+            <ul>
+              <li>2024.01 / (주)포컴퍼니 국내/해외 배송폼</li>
+              <li>2025.02 / (주)포컴퍼니 매출 정보 분석 웹사이트</li>
+              <li>2025.02 / (주)포컴퍼니 시딩 관리 웹사이트</li>
+            </ul>
+  
+            현재 다음과 같은 프로젝트를 진행중입니다.
+
+            <ul>
+              <li>(주)포컴퍼니 서브 ERP 개발중</li>
+              <li>옐로우옥션 앱 개발중</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">My Projects</h2>
+      <p class="text-center text-muted mb-4">개발 경력</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">(주)포컴퍼니 국내/해외 배송폼 개발</h5>
+              <p class="card-text">(주)포컴퍼니 국내/해외 배송폼 프론트와 백엔드를 개발했습니다.</p>
+              <button class="btn btn-primary" onclick="showProjectModal('1.png')">View Project</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="2.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">(주)포컴퍼니 기업의 매출 취합 웹 개발</h5>
+              <p class="card-text">매출 정보를 모두 업로드, view 할 수 있는 페이지의 프론트와 백엔드 모두 개발했습니다.</p>
+              <button class="btn btn-primary" onclick="showProjectModal('2.png')">View Project</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="3.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">(주)포컴퍼니 기업의 시딩 자동화 페이지 개발</h5>
+              <p class="card-text">시딩 업무에 대한 단순화와 시딩 과정을 전부 담은 웹페이지의 백엔드를 개발했습니다.</p>
+              <button class="btn btn-primary" onclick="showProjectModal('3.png')">View Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2>Contact Me</h2>
+      <p class="text-muted mb-4">기업체 웹 개발, 교육 세미나 등 어떤 요청도 다 받습니다!</p>
+      <button onclick="showContactInfo()" class="btn btn-primary btn-lg">연락처 보기</button>
+      <div class="mt-4">
+        <a href="https://github.com/ksh01p?tab=repositories" class="text-muted mx-2"><i class="fab fa-github fa-2x"></i></a>
+        <!-- 트위터 아이콘 제거 -->
+        <a href="mailto:william7872ksh@gmail.com" class="text-muted mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Modal for Contact Info -->
+  <div id="contactModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#fff; padding:20px; border:1px solid #ccc; box-shadow:0px 4px 6px rgba(0,0,0,0.1); z-index:1000; text-align:center;">
+    <h3>연락처</h3>
+    <p>전화: 010-4680-4721</p>
+    <p>이메일: william7872ksh@gmail.com</p>
+    <button onclick="closeContactInfo()" class="btn btn-secondary">닫기</button>
+  </div>
+  <div id="modalBackdrop" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;" onclick="closeContactInfo()"></div>
+
+  <!-- Popup Modal for Project Image -->
+  <div id="projectModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#fff; padding:20px; border:1px solid #ccc; box-shadow:0px 4px 6px rgba(0,0,0,0.1); z-index:1000; text-align:center;">
+    <img id="projectModalImg" src="" alt="Project Image" style="max-width:100%; height:auto;">
+    <br>
+    <button onclick="closeProjectModal()" class="btn btn-secondary mt-3">Close</button>
+  </div>
+  <div id="projectModalBackdrop" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;" onclick="closeProjectModal()"></div>
+
+  <script>
+    function showContactInfo() {
+      document.getElementById('contactModal').style.display = 'block';
+      document.getElementById('modalBackdrop').style.display = 'block';
+    }
+
+    function closeContactInfo() {
+      document.getElementById('contactModal').style.display = 'none';
+      document.getElementById('modalBackdrop').style.display = 'none';
+    }
+
+    // Project Modal Functions
+    function showProjectModal(imgSrc) {
+      document.getElementById('projectModalImg').src = imgSrc;
+      document.getElementById('projectModal').style.display = 'block';
+      document.getElementById('projectModalBackdrop').style.display = 'block';
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectModal').style.display = 'none';
+      document.getElementById('projectModalBackdrop').style.display = 'none';
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 김수형. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
